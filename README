@@ -1,0 +1,73 @@
+TwitFlick: The website that uses Twitter and Flickr to do nothing useful.
+
+New and improved!
+Now in Ruby on Rails!
+
+Brought to you by:
+Damon Butler
+iamdamocles@gmail.com
+608-228-0867
+
+
+
+=== INSTALLATION REQUIREMENTS ===
+
+* ruby 1.9.2
+* rails 3.1
+* sqlite3
+
+
+
+=== RUNNING THE WEBSITE ===
+
+In the terminal of your choice, change into the twitflick_on_rails project
+directory (you should be there right now if you're reading this!) so that it is 
+your current working directory. Then run the following command:
+
+  $ rails server
+
+Point your browser to the following URL:
+
+  http://localhost:3000/
+
+NOTE: I am using only the development and test environments. There is no
+production environment for this site.
+
+IMPORTANT: Because I am using the Rails default of sqlite for the database, you 
+cannot allow more than one client to access the same website instance! 
+Concurrent access to a sqlite database results in undefined and unpredictable 
+behavior.
+
+I have supplied a virginal clean database file if, at any time, you'd like to
+start the site up from scratch. It is called, rather obviously,
+"db/development_virgin.sqlite3". Simply copy it to the same name as the existing
+"live" database file ("db/development.sqlite3") and restart the server and 
+you're good to go.
+
+
+
+=== RUNNING THE WEBSITE TEST SUITE ===
+
+Unit and behavioral tests for the site are defined in
+
+ * test/functional/twitflick_controller_test.rb
+ * test/unit/twitflick_unit_test.rb
+
+To run the test suite, change into the twitflick_on_rails project directory so 
+that it is your current working directory. Then run the following command:
+
+  $ rake test
+
+
+
+=== NOTES ===
+
+Per web accessibility standards, I designed the site to function properly
+without any javascript (or CSS). With javascript turned off, clicking "DO THAT" 
+results in a form submission that reloads the page. The site's javascript is 
+primarily there just to override this default behavior and provide smooth AJAX 
+performance without page reloads (per your design specs).
+
+As you can see from some of my remarks in the code, I wasn't always certain of
+"best practices" for Rails. I am more used to web development frameworks that
+force you to write more code!
