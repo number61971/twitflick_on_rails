@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  twitter_search_id: 1
+  flickr_search_id: 1
+
+two:
+  twitter_search_id: 1
+  flickr_search_id: 1

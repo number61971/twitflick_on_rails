@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  search_term: MyText
+  response_json: MyText
+  img_url: MyText
+  page_url: MyText
+
+two:
+  search_term: MyText
+  response_json: MyText
+  img_url: MyText
+  page_url: MyText

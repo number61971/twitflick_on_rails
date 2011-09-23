@@ -2,6 +2,7 @@ TwitflickOnRails::Application.routes.draw do
   get "twitflick/index"
 
   root :to => "twitflick#index"
+  match "/update" => "twitflick#update"
 
   match "twitflick/index" => "twitflick#index"
   match "twitflick/index:format" => "twitflick#index"

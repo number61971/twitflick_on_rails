@@ -10,6 +10,25 @@ iamdamocles@gmail.com
 
 
 
+=== NOTES ON REFACTORING AT GETTY: 2011-09-23 ===
+
+Because the Twitter search API was nonfunctional, we couldn't actually test any
+of our code changes. (We couldn't even test the original site!) So we don't
+know for certain that it actually works. Without Twitter, the site just bombs
+out because Twitter isn't returning JSON, it's returning an HTML error page.
+
+Of course, the site could ultimately be made resilient to this, but in the time
+allotted, and considering what the point of the exercise was, we didn't bother
+trying.
+
+You'll note the addition of a currently unused "update" route and controller.
+We refactored the project code very quickly, leaving us ample time to discuss
+changes that could be made made were the project to be made more "real". (E.g., 
+allowing someone to enter a Twitter search term rather than setting it 
+permanently at "getty".)
+
+
+
 === INSTALLATION REQUIREMENTS ===
 
 * ruby 1.9.2
